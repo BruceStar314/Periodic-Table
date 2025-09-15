@@ -1,12 +1,15 @@
 // Elements component that renders a single element
-const Elements = ({ element }) => {
+const Elements = ({ element, onClick }) => {
     return (
-        <div className="border p-2 text-center">
+        <button 
+            className="border p-2 text-center cursor-pointer hover:bg-gray-100 transition-colors" 
+            onClick={() => onClick(element)}
+        >
             <div className="font-bold">{element.symbol}</div>
             <div className="text-xs">{element.number}</div>
             <div className="text-xs">{element.name}</div>
             <div className="text-xs">{element.mass}</div>
-        </div>
+        </button>
     );
 };
 
