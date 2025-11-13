@@ -14,11 +14,11 @@ const Elements = ({ element, onClick }) => {
         "noble gas": "bg-[#ff6961]",
         "unknown": "bg-gray-100",
     };
-    const bgClass = familyToBg[element.family] || "bg-gray-100";
+    const bgClass = familyToBg[element.family];
 
     return (
-        <button 
-            className={`border p-2 text-center cursor-pointer transition-colors ${bgClass} hover:brightness-105`} 
+        <button
+            className={`border border-none rounded-[5px] p-2 text-center cursor-pointer transition-colors ${bgClass} hover:brightness-105 h-25 w-25 hover:scale-300`} 
             onClick={() => onClick(element)}
         >
             <div className="font-bold">{element.symbol}</div>
@@ -41,6 +41,7 @@ export const elements = [
     // Period 2
     // Row 2
     {number: 3, name: "Lithium", symbol: "Li", mass: 6.94, group: 1, period: 2, family: "alkali metal"},
+    // {number: null, name: "", symbol: "", mass: "", group: 2, period: 2, family: ""},
     {number: 4, name: "Beryllium", symbol: "Be", mass: 9.012, group: 2, period: 2, family: "alkaline earth metal"},
     {number: 5, name: "Boron", symbol: "B", mass: 10.81, group: 13, period: 2, family: "metalloid"},
     {number: 6, name: "Carbon", symbol: "C", mass: 12.01, group: 14, period: 2, family: "nonmetal"},
@@ -178,19 +179,7 @@ export const elements = [
     {number: 116, name: "Livermorium", symbol: "Lv", mass: 293.00, group: 16, period: 7, family: "unknown"},
     {number: 117, name: "Tennessine", symbol: "Ts", mass: 294.00, group: 17, period: 7, family: "unknown"},
     {number: 118, name: "Oganesson", symbol: "Og", mass: 294.00, group: 18, period: 7, family: "unknown"},
-    // Row 8
-    // Row 9
-
-    // Row 9
-    // Row 9
-    // Row 9
-    // Row 
-    // Row 13
-    // Row 14
-    // Row 15
-    // Row 16
-    // Row 17
-    // Row 18
+  
 ];
 
 export default Elements;
