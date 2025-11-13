@@ -6,12 +6,12 @@ const Elements = ({ element, onClick }) => {
         "other metal": "bg-yellow-900",
         "transition metal": "bg-purple-400",
         "post-transition metal": "bg-green-300",
-        "lanthanide": "bg-blue-300",
+        "lanthanides": "bg-blue-300",
         "actinide": "bg-[#ffb347]",
         "metalloid": "bg-[#ffb207]",
         "nonmetal": "bg-blue-300",
         "halogen": "bg-pink-300",
-        "noble gas": "bg-[#add8e6]",
+        "noble gas": "bg-[#ff6961]",
         "unknown": "bg-gray-100",
     };
     const bgClass = familyToBg[element.family] || "bg-gray-100";
@@ -46,7 +46,7 @@ export const elements = [
     {number: 6, name: "Carbon", symbol: "C", mass: 12.01, group: 14, period: 2, family: "nonmetal"},
     {number: 7, name: "Nitrogen", symbol: "N", mass: 14.01, group: 15, period: 2, family: "nonmetal"},
     {number: 8, name: "Oxygen", symbol: "O", mass: 16.00, group: 16, period: 2, family: "nonmetal"},
-    {number: 9, name: "Fluorine", symbol: "F", mass: 19.00, group: 17, period: 2, family: "halogen"},
+    {number: 9, name: "Fluorine", symbol: "F", mass: 19.00, group: 17, period: 2, family: "nonmetal"},
     {number: 10, name: "Neon", symbol: "Ne", mass: 20.18, group: 18, period: 2, family: "noble gas"},
     
     // Period 3
@@ -57,7 +57,7 @@ export const elements = [
     {number: 14, name: "Silicon", symbol: "Si", mass: 28.09, group: 14, period: 3, family: "metalloid"},
     {number: 15, name: "Phosphorus", symbol: "P", mass: 30.97, group: 15, period: 3, family: "nonmetal"},
     {number: 16, name: "Sulfur", symbol: "S", mass: 32.07, group: 16, period: 3, family: "nonmetal"},
-    {number: 17, name: "Chlorine", symbol: "Cl", mass: 35.45, group: 17, period: 3, family: "halogen"},
+    {number: 17, name: "Chlorine", symbol: "Cl", mass: 35.45, group: 17, period: 3, family: "nonmetal"},
     {number: 18, name: "Argon", symbol: "Ar", mass: 39.95, group: 18, period: 3, family: "noble gas"},
     
     // Period 4
@@ -76,9 +76,9 @@ export const elements = [
     {number: 30, name: "Zinc", symbol: "Zn", mass: 65.41, group: 12, period: 4, family: "transition metal"},
     {number: 31, name: "Gallium", symbol: "Ga", mass: 69.72, group: 13, period: 4, family: "post-transition metal"},
     {number: 32, name: "Germanium", symbol: "Ge", mass: 72.63, group: 14, period: 4, family: "metalloid"},
-    {number: 33, name: "Arsenic", symbol: "As", mass: 74.92, group: 15, period: 4, family: "nonmetal"},
+    {number: 33, name: "Arsenic", symbol: "As", mass: 74.92, group: 15, period: 4, family: "metalloid"},
     {number: 34, name: "Selenium", symbol: "Se", mass: 78.96, group: 16, period: 4, family: "nonmetal"},
-    {number: 35, name: "Bromine", symbol: "Br", mass: 79.90, group: 17, period: 4, family: "halogen"},
+    {number: 35, name: "Bromine", symbol: "Br", mass: 79.90, group: 17, period: 4, family: "nonmetal"},
     {number: 36, name: "Krypton", symbol: "Kr", mass: 83.80, group: 18, period: 4, family: "noble gas"},
     
     // Period 5
@@ -97,9 +97,9 @@ export const elements = [
     {number: 48, name: "Cadmium", symbol: "Cd", mass: 112.41, group: 12, period: 5, family: "transition metal"},
     {number: 49, name: "Indium", symbol: "In", mass: 114.82, group: 13, period: 5, family: "post-transition metal"},
     {number: 50, name: "Tin", symbol: "Sn", mass: 118.71, group: 14, period: 5, family: "post-transition metal"},
-    {number: 51, name: "Antimony", symbol: "Sb", mass: 121.76, group: 15, period: 5, family: "nonmetal"},
-    {number: 52, name: "Tellurium", symbol: "Te", mass: 127.60, group: 16, period: 5, family: "nonmetal"},
-    {number: 53, name: "Iodine", symbol: "I", mass: 126.90, group: 17, period: 5, family: "halogen"},
+    {number: 51, name: "Antimony", symbol: "Sb", mass: 121.76, group: 15, period: 5, family: "metalloid"},
+    {number: 52, name: "Tellurium", symbol: "Te", mass: 127.60, group: 16, period: 5, family: "metalloid"},
+    {number: 53, name: "Iodine", symbol: "I", mass: 126.90, group: 17, period: 5, family: "nonmetal"},
     {number: 54, name: "Xenon", symbol: "Xe", mass: 131.29, group: 18, period: 5, family: "noble gas"},
     
     // Period 6
@@ -107,22 +107,22 @@ export const elements = [
     {number: 55, name: "Cesium", symbol: "Cs", mass: 132.91, group: 1, period: 6, family: "alkali metal"},
     {number: 56, name: "Barium", symbol: "Ba", mass: 137.33, group: 2, period: 6, family: "alkaline earth metal"},
     // Lanthanides
-    {number: 57, name: "Lanthanum", symbol: "La", mass: 138.91, group: 3, period: 6, family: "lanthanide"},
+    {number: 57, name: "Lanthanum", symbol: "La", mass: 138.91, group: 3, period: 6, family: "lanthanides"},
     
-    {number: 58, name: "Cerium", symbol: "Ce", mass: 140.12, group: null, period: 6, family: "lanthanide"},
-    {number: 59, name: "Praseodymium", symbol: "Pr", mass: 140.91, group: null, period: 6, family: "lanthanide "},
-    {number: 60, name: "Neodymium", symbol: "Nd", mass: 144.24, group: null, period: 6, family: "lanthanide "},
-    {number: 61, name: "Promethium", symbol: "Pm", mass: 145.00, group: null, period: 6, family: "lanthanide "},
-    {number: 62, name: "Samarium", symbol: "Sm", mass: 150.36, group: null, period: 6, family: "lanthanide "},
-    {number: 63, name: "Europium", symbol: "Eu", mass: 151.96, group: null, period: 6, family: "lanthanide "},
-    {number: 64, name: "Gadolinium", symbol: "Gd", mass: 157.25, group: null, period: 6, family: "lanthanide "},
-    {number: 65, name: "Terbium", symbol: "Tb", mass: 158.93, group: null, period: 6, family: "lanthanide "},
-    {number: 66, name: "Dysprosium", symbol: "Dy", mass: 162.50, group: null, period: 6, family: "lanthanide "},
-    {number: 67, name: "Holmium", symbol: "Ho", mass: 164.93, group: null, period: 6, family: "lanthanide "},
-    {number: 68, name: "Erbium", symbol: "Er", mass: 167.26, group: null, period: 6, family: "lanthanide "},
-    {number: 69, name: "Thulium", symbol: "Tm", mass: 168.93, group: null, period: 6, family: "lanthanide "},
-    {number: 70, name: "Ytterbium", symbol: "Yb", mass: 173.05, group: null, period: 6, family: "lanthanide "},
-    {number: 71, name: "Lutetium", symbol: "Lu", mass: 174.97, group: 3, period: 6, family: "lanthanide "},
+    {number: 58, name: "Cerium", symbol: "Ce", mass: 140.12, group: null, period: 6, family: "lanthanides"},
+    {number: 59, name: "Praseodymium", symbol: "Pr", mass: 140.91, group: null, period: 6, family: "lanthanides"},
+    {number: 60, name: "Neodymium", symbol: "Nd", mass: 144.24, group: null, period: 6, family: "lanthanides"},
+    {number: 61, name: "Promethium", symbol: "Pm", mass: 145.00, group: null, period: 6, family: "lanthanides"},
+    {number: 62, name: "Samarium", symbol: "Sm", mass: 150.36, group: null, period: 6, family: "lanthanides"},
+    {number: 63, name: "Europium", symbol: "Eu", mass: 151.96, group: null, period: 6, family: "lanthanides"},
+    {number: 64, name: "Gadolinium", symbol: "Gd", mass: 157.25, group: null, period: 6, family: "lanthanides"},
+    {number: 65, name: "Terbium", symbol: "Tb", mass: 158.93, group: null, period: 6, family: "lanthanides"},
+    {number: 66, name: "Dysprosium", symbol: "Dy", mass: 162.50, group: null, period: 6, family: "lanthanides"},
+    {number: 67, name: "Holmium", symbol: "Ho", mass: 164.93, group: null, period: 6, family: "lanthanides"},
+    {number: 68, name: "Erbium", symbol: "Er", mass: 167.26, group: null, period: 6, family: "lanthanides"},
+    {number: 69, name: "Thulium", symbol: "Tm", mass: 168.93, group: null, period: 6, family: "lanthanides"},
+    {number: 70, name: "Ytterbium", symbol: "Yb", mass: 173.05, group: null, period: 6, family: "lanthanides"},
+    {number: 71, name: "Lutetium", symbol: "Lu", mass: 174.97, group: 3, period: 6, family: "lanthanides"},
     
     // Continue with Period 6
     {number: 72, name: "Hafnium", symbol: "Hf", mass: 178.49, group: 4, period: 6, family: "transition metal"},
@@ -146,7 +146,7 @@ export const elements = [
     {number: 87, name: "Francium", symbol: "Fr", mass: 223.00, group: 1, period: 7, family: "alkali metal"},
     {number: 88, name: "Radium", symbol: "Ra", mass: 226.00, group: 2, period: 7, family: "alkaline earth metal"},
     // Actinides
-    {number: 89, name: "Actinium", symbol: "Ac", mass: 227.00, group: 3, period: 7, family: "transition metal"},
+    {number: 89, name: "Actinium", symbol: "Ac", mass: 227.00, group: 3, period: 7, family: "actinide"},
     {number: 90, name: "Thorium", symbol: "Th", mass: 232.04, group: null, period: 7, family: "actinide"},
     {number: 91, name: "Protactinium", symbol: "Pa", mass: 231.04, group: null, period: 7, family: "actinide"},
     {number: 92, name: "Uranium", symbol: "U", mass: 238.03, group: null, period: 7, family: "actinide"},
