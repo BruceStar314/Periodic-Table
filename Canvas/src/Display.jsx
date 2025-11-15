@@ -1,18 +1,37 @@
-const Display = ({ element }) => {
-    if (!element) {
-        return (
-            <div className="border flex items-center justify-center h-28 w-64">
-                Click on an element to see its details
-            </div>
-        );
-    }
+const Display = ({ element, onClose }) => {
+    if (!element) return null;
 
     return (
-        <div className="border border-black p-4 h-28 w-64">
-            <div className="font-bold text-lg text-black">{element.name}</div>
-            <div className="text-xs text-black">Symbol: {element.symbol}</div>
-            <div className="text-xs text-black">Atomic Number: {element.number}</div>
-            <div className="text-xs text-black">Atomic Mass: {element.mass}</div>
+        <div className="h-full flex flex-col">
+            <div className="flex items-center justify-between p-4 border-b">
+                <div>
+                    <div className="font-bold text-xl text-black">{element.name}</div>
+                    <div className="text-sm text-gray-600">{element.family}</div>
+                </div>
+                <button
+                    onClick={onClose}
+                    className="text-gray-600 hover:text-gray-900 px-2 py-1 rounded"
+                    aria-label="Close details"
+                >
+                    ✕
+                </button>
+            </div>
+
+            <div className="p-4 overflow-y-auto">
+                <div className="mb-2"><span className="font-semibold">Symbol:</span> {element.symbol}</div>
+                <div className="mb-2"><span className="font-semibold">Atomic Number:</span> {element.number}</div>
+                <div className="mb-2"><span className="font-semibold">Atomic Mass:</span> {element.mass}</div>
+                {element.group && (
+                    <div className="mb-2"><span className="font-semibold">Group:</span> {element.group}</div>
+                )}
+                {element.period && (
+                    <div className="mb-2"><span className="font-semibold">Period:</span> {element.period}</div>
+                )}
+                {element.family && (
+                    <div className="mb-2"><span className="font-semibold">Family:</span> {element.family}</div>
+                )}
+                {/* Add any other fields you want to surface */}
+            </div>
         </div>
     );
 };
