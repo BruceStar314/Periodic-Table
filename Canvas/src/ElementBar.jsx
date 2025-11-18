@@ -1,9 +1,10 @@
 const ElementBar = ({ elements, onSelectElement}) => {
     return (
-        <div className="h-screen w-24 bg-(gray-200) overflow-y-auto p-2">
+        <div className="h-screen w-24  overflow-y-auto p-2">
             {elements.map((element) => (
                 <div
                     key={element.atomicNumber}
+          // Fix the elementbar gray overlay when opened 
                     className="cursor-pointer p-2 mb-2 bg-white rounded shadow hover:bg-gray-100 text-center"
                     onClick={() => onSelectElement(element)}
                 >
