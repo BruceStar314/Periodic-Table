@@ -28,7 +28,7 @@ const Container = () => {
             {/* Overlay when drawer is open */}
             {selectedElement && (
                 <div
-                    className="fixed inset-0 bg-black bg-opacity-30 z-40"
+                    className="fixed inset-0 bg-opacity-30 bg-opacity-30 z-40"
                     onClick={closeDrawer}
                     aria-hidden
                 />
