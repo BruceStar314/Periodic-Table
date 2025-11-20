@@ -24,7 +24,7 @@ const Elements = ({ element, onClick }) => {
             <div className="font-bold">{element.symbol}</div>
             <div className="text-xs">{element.number}</div>
             <div className="text-xs">{element.name}</div>
-            <div className="text-xs">{element.mass}</div>
+            {/*<div className="text-xs">{element.mass}</div>*/}
         </button>
     );
 };
@@ -33,7 +33,7 @@ const Elements = ({ element, onClick }) => {
 export const elements = [
     // Period 1
     // Row 1
-    {number: 1, name: "Hydrogen", symbol: "H", mass: 1.008, group: 1, period: 1, family: "nonmetal"},
+    {number: 1, name: "Hydrogen", symbol: "H",group:1, period: 1, mass: 1.008, family: "nonmetal", melting: -259.16, boiling: -252.87, discover: "Henry Cavendish"},
     {number: 2, name: "Helium", symbol: "He", mass: 4.003, group: 18, period: 1, family: "noble gas"},
     
 

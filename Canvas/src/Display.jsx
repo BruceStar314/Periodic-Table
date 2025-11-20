@@ -30,7 +30,17 @@ const Display = ({ element, onClose }) => {
                 {element.family && (
                     <div className="mb-2"><span className="font-semibold">Family:</span> {element.family}</div>
                 )}
-                {/* Add any other fields you want to surface */}
+                {element.melting && (
+                    <div className="mb-2"><span className="font-semibold">Melting:</span> {element.melting}</div>
+                )}
+{element.boiling && (
+                    <div className="mb-2"><span className="font-semibold">Boiling:</span> {element.boiling}</div>
+                )}
+                {element.discover && (
+                    <div className="mb-2"><span className="font-semibold">Discoverd by:</span> {element.discover}</div>
+                )}
+
+        {/* Add any other fields you want to surface */}
             </div>
         </div>
     );
