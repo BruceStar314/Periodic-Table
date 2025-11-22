@@ -10,7 +10,7 @@ const Display = ({ element, onClose }) => {
                 </div>
                 <button
                     onClick={onClose}
-                    className="text-gray-600 hover:text-gray-900 px-2 py-1 rounded"
+                    className="text-gray-600 hover:text-gray-900 px-2 py-1 rounded cursor-pointer"
                     aria-label="Close details"
                 >
                     ✕

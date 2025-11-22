@@ -1,18 +1,18 @@
 // Elements component that renders a single element
 const Elements = ({ element, onClick }) => {
     const familyToBg = {
-        "alkali metal": "bg-blue-400",
-        "alkaline earth metal": "bg-[#880808]",
-        "other metal": "bg-yellow-900",
-        "transition metal": "bg-purple-400",
-        "post-transition metal": "bg-green-300",
-        "lanthanides": "bg-blue-300",
-        "actinide": "bg-[#ffb347]",
-        "metalloid": "bg-[#ffb207]",
-        "nonmetal": "bg-blue-300",
-        "halogen": "bg-pink-300",
-        "noble gas": "bg-[#ff6961]",
-        "unknown": "bg-gray-100",
+        "Alkali Metal": "bg-blue-400",
+        "Alkaline Earth Metal": "bg-[#880808]",
+        "Other Metal": "bg-yellow-900",
+        "Transition Metal": "bg-purple-400",
+        "Post-transition Metal": "bg-green-300",
+        "Lanthanides": "bg-blue-300",
+        "Actinide": "bg-[#ffb347]",
+        "Metalloid": "bg-[#ffb207]",
+        "Reactive Nonmetal": "bg-blue-300",
+        "Halogen": "bg-pink-300",
+        "Noble Gas": "bg-[#ff6961]",
+        "Unknown Chemical Properties": "bg-gray-100",
     };
     const bgClass = familyToBg[element.family];
 
