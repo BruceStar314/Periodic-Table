@@ -41,12 +41,17 @@ export const elements = [
     // Period 2
     // Row 2
     {number: 3, name: "Lithium", symbol: "Li", mass: 6.94, group: 1, period: 2, family: "Alkali Metal"},
-    // {number: null, name: "", symbol: "", mass: "", group: 2, period: 2, family: ""},
+    {group: 2, period: 2,},
     {number: 4, name: "Beryllium", symbol: "Be", mass: 9.012, group: 2, period: 2, family: "Alkaline Earth Metal"},
+    {group: 13, period: 4,},
     {number: 5, name: "Boron", symbol: "B", mass: 10.81, group: 13, period: 2, family: "Metalloid"},
+    {group: 14, period: 4,},
     {number: 6, name: "Carbon", symbol: "C", mass: 12.01, group: 14, period: 2, family: "Reactive Nonmetal"},
+    {group: 15, period: 4,},
     {number: 7, name: "Nitrogen", symbol: "N", mass: 14.01, group: 15, period: 2, family: "Reactive Nonmetal"},
+    {group: 16, period: 4,},
     {number: 8, name: "Oxygen", symbol: "O", mass: 16.00, group: 16, period: 2, family: "Reactive Nonmetal"},
+    {group: 17, period: 4,},
     {number: 9, name: "Fluorine", symbol: "F", mass: 19.00, group: 17, period: 2, family: "Reactive Nonmetal"},
     {number: 10, name: "Neon", symbol: "Ne", mass: 20.18, group: 18, period: 2, family: "Noble Gas"},
     
@@ -65,15 +70,59 @@ export const elements = [
     // Row 4
     {number: 19, name: "Potassium", symbol: "K", mass: 39.10, group: 1, period: 4, family: "Alkali Metal"},
     {number: 20, name: "Calcium", symbol: "Ca", mass: 40.08, group: 2, period: 4, family: "Alkaline Earth Metal"},
+    {group: 3, period: 4,},
+    {group: 3, period: 4,},
+    {group: 3, period: 4,},
     {number: 21, name: "Scandium", symbol: "Sc", mass: 44.96, group: 3, period: 4, family: "Transition Metal"},
-    {number: 22, name: "Titanium", symbol: "Ti", mass: 47.87, group: 4, period: 4, family: "Transition Metal"},
+    {group:  4, period: 4,},
+    {group: 4, period: 4,},
+    {group: 4, period: 4,},
+    {group: 5, period: 4,},
+    {group: 5, period: 4,},
+    {group: 5, period: 4,},
     {number: 23, name: "Vanadium", symbol: "V", mass: 50.94, group: 5, period: 4, family: "Transition Metal"},
+    {number: 22, name: "Titanium", symbol: "Ti", mass: 47.87, group: 4, period: 4, family: "Transition Metal"},
+    {group: 6, period: 4,},
+    {group: 6, period: 4,},
+    {group: 6, period: 4,},
     {number: 24, name: "Chromium", symbol: "Cr", mass: 52.00, group: 6, period: 4, family: "Transition Metal"},
+
+    {group: 7, period: 4,},
+    {group: 7, period: 4,},
+    {group: 7, period: 4,},
+
     {number: 25, name: "Manganese", symbol: "Mn", mass: 54.94, group: 7, period: 4, family: "Transition Metal"},
+
+    {group: 8, period: 4,},
+    {group: 8, period: 4,},
+    {group: 8, period: 4,},
+
     {number: 26, name: "Iron", symbol: "Fe", mass: 55.85, group: 8, period: 4, family: "Transition Metal"},
+
+    {group: 9, period: 4,},
+    {group: 9, period: 4,},
+    {group: 9, period: 4,},
+
+
+
     {number: 27, name: "Cobalt", symbol: "Co", mass: 58.93, group: 9, period: 4, family: "Transition Metal"},
+
+    {group: 10, period: 4,},
+    {group: 10, period: 4,},
+    {group: 10, period: 4,},
+
     {number: 28, name: "Nickel", symbol: "Ni", mass: 58.69, group: 10, period: 4, family: "Transition Metal"},
+
+    {group: 11, period: 4,},
+    {group: 11, period: 4,},
+    {group: 11, period: 4,},
+
     {number: 29, name: "Copper", symbol: "Cu", mass: 63.55, group: 11, period: 4, family: "Transition Metal"},
+
+    {group: 12, period: 4,},
+    {group: 12, period: 4,},
+    {group: 12, period: 4,},
+
     {number: 30, name: "Zinc", symbol: "Zn", mass: 65.41, group: 12, period: 4, family: "Transition Metal"},
     {number: 31, name: "Gallium", symbol: "Ga", mass: 69.72, group: 13, period: 4, family: "Post-transition Metal"},
     {number: 32, name: "Germanium", symbol: "Ge", mass: 72.63, group: 14, period: 4, family: "Metalloid"},
